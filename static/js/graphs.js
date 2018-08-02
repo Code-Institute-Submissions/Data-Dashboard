@@ -1,7 +1,7 @@
 queue()
-    .defer(d3.csv, "data/EPL_Set.csv")
-    .await(makeGraphs);
+    .defer(d3.csv, "data/Happy.csv")
+    .await(MakeGraphs);
     
-function makeGraphs(error, eplData){
+function MakeGraphs(error, happyData){
     
 }
