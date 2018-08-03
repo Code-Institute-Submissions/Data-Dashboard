@@ -5,9 +5,19 @@ queue()
 function makeGraphs(error, towedData){
     var ndx = crossfilter(towedData);
     
+    show_color_selector(ndx);
     show_towed_make(ndx);
     
     dc.renderAll();
+}
+
+function show_color_selector(ndx){
+    dim = ndx.dimension(dc.pluck('Color'));
+    group = dim.group()
+    
+    dc.selectMenu("#color-selector")
+    .dimension(dim)
+    .group(group);
 }
 
 function show_towed_make(ndx){
