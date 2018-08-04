@@ -7,6 +7,9 @@ function makeGraphs(error, towedData){
     
     show_color_selector(ndx);
     show_towed_make(ndx);
+    show_style_make(ndx);
+    
+    
     
     dc.renderAll();
 }
@@ -37,3 +40,59 @@ function show_towed_make(ndx){
         .xAxisLabel("Car Make")
         .yAxis().ticks(10);
 }
+function show_style_make(ndx) {
+    
+    function styleByMake(dimension, Style) {
+        return dimension.group().reduce(
+            function (p, v) {
+                p.total++;
+                if(v.Style == Style) {
+                    p.match++;
+                }
+                return p;
+            },
+            function (p, v) {
+                p.total--;
+                if(v.Style == Style) {
+                    p.match--;
+                }
+                return p;
+            },
+            function () {
+                return {total: 0, match: 0};
+            }
+        );
+    }
+    
+    var dim = ndx.dimension(dc.pluck("Make"));
+    var fourdoorByMake = styleByMake(dim, "4D");
+    var twodoorByMake = styleByMake(dim, "2D");
+   
+    
+    dc.barChart("#style-make")
+        .width(800)
+        .height(400)
+        .dimension(dim)
+        .group(fourdoorByMake, "Four Door")
+        .stack(twodoorByMake, "Two Door")
+        .valueAccessor(function(d) {
+            if(d.value.total > 0) {
+                return (d.value.match / d.value.total) * 100;
+            } else {
+                return 0;
+            }
+        })
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .legend(dc.legend().x(700).y(20).itemHeight(15).gap(5))
+        .margins({top: 10, right: 100, bottom: 30, left: 30})
+        .xAxisLabel("Car Make")
+        .elasticY(true)
+        .yAxis().ticks(30);
+
+        
+        
+}
+
+
+
