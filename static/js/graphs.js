@@ -11,6 +11,9 @@ function makeGraphs(error, towedData){
     //percentage of four doors car in IL and IN
     show_percent_that_are_four_doors(ndx, "IL", "#percent-of-fourDoors-in-IL");
     show_percent_that_are_four_doors(ndx, "IN", "#percent-of-fourDoors-in-IN");
+    show_percent_that_are_two_doors(ndx, "IL", "#percent-of-twoDoors-in-IL");
+    show_percent_that_are_two_doors(ndx, "IN", "#percent-of-twoDoors-in-IN");
+    
     
     
     
@@ -73,8 +76,8 @@ function show_style_make(ndx) {
    
     
     dc.barChart("#style-make")
-        .width(600)
-        .height(300)
+        .width(800)
+        .height(400)
         .dimension(dim)
         .group(fourdoorByMake, "Four Door")
         .stack(twodoorByMake, "Two Door")
@@ -132,6 +135,47 @@ function show_percent_that_are_four_doors(ndx, place, element) {
         })
         .group(percentageThatAreFourDoors)
 }
+
+
+function show_percent_that_are_two_doors(ndx, place, element) {
+    var percentageThatAreTwoDoors = ndx.groupAll().reduce(
+        function(p, v) {
+            if (v.State === place) {
+                p.count++;
+                if(v.Style === "2D") {
+                    p.are_twoD++;
+                }
+            }
+            return p;
+        },
+        function(p, v) {
+            if (v.State === place) {
+                p.count--;
+                if(v.Style === "2D") {
+                    p.are_twoD--;
+                }
+            }
+            return p;
+        },
+        function() {
+            return {count: 0, are_twoD: 0};    
+        },
+    );
+    
+    dc.numberDisplay(element)
+        .formatNumber(d3.format(".2%"))
+        .valueAccessor(function (d) {
+            if (d.count == 0) {
+                return 0;
+            } else {
+                return (d.are_twoD / d.count);
+            }
+        })
+        .group(percentageThatAreTwoDoors)
+}
+
+
+
 
 
 
