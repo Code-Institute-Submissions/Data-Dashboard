@@ -1,18 +1,15 @@
-.make-balance.x.axis text {
-    display:none;
-    font-size: 50px;
+#make-balance .x.axis text,
+#style-make .x.axis text {
+  display: none;
+
 }
+
 #part1{
-    
+    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
-#part2.x.axis text {
-    display:none;
-    font-size: 50px;
+#percentage{
+    font-size: 30px;
+    text-align: center;
 }
-
-#part2 {
-    
-}
-
-

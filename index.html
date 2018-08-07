@@ -16,30 +16,86 @@
     <script type="text/javascript" src="static/js/graphs.js"></script>
 </head>
 <body>
+    
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Chicago Towed Vehicles</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    
+    </div>
+  </div>
+</nav>
+
 
     <div class="container">
         <div class="part1">
-            <h1>Make Of Cars Towed</h1> 
+            <h1>The Make and Colour Of Cars Towed</h1> 
+            <button onclick="reset_towedData()"> Press To Reset The Data</button>
             <div id="make-balance"></div>
             <div id="color-selector"></div>
             <div id="make-pie"></div> 
         </div>
-       
+    
+    </div>  
+    
+    <div class="container">
         <div class="part2">
-            <div class="number-box" id="style-make"></div>
-            <div class="number-box" id="percent-of-fourDoors-in-IL"></div>
-            <div class="number-box" id="percent-of-fourDoors-in-IN"></div>
-            <div class="number-box" id="percent-of-twoDoors-in-IL"></div>
-            <div class="number-box" id="percent-of-twoDoors-in-IN"></div>
-            <div class="number-box" id="percent-of-suvDoors-in-IL"></div>
-            <div class="number-box" id="percent-of-suvDoors-in-IN"></div>
+            <h1>The Style Of Car</h1>
+            <div id="style-make"></div>
+            
+            <div id="percentage">
+                
+                <div class=" col-md-4 fourdoors">
+                    <div id="percent-of-fourDoors-in-IL"></div>
+                    <div id="percent-of-fourDoors-in-IN"></div>
+                </div>
+            
+                <div class="col-md-4 twodoors">
+                    <div id="percent-of-twoDoors-in-IL"></div>
+                    <div id="percent-of-twoDoors-in-IN"></div>    
+                </div>
+            
+                <div class="col-md-4 SUV">
+                    <div id="percent-of-suvDoors-in-IL"></div>
+                    <div id="percent-of-suvDoors-in-IN"></div>    
+                </div>
+                
+                    
+            </div>  
         </div>
-        <div class="part3">
-            <div id="towed-to"></div>
-        </div>
-        
-        <div class="number-box" id="averagecolorby-state"></div>
     </div>
+        
+            
+    <div class="container">
+        <div class="part3">
+            <h1>The Towed To Location</h1>   
+            <div id="towed-to"></div>
+        </div>  
+    </div>  
+        
+        
+      
 </body>
 </html>
 
