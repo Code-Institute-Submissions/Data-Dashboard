@@ -1,7 +1,17 @@
-#style-make .x.axis text{
-    display: none;
-}
-#make-balance .x.axis text {
-  display:none;
+.number-box .x.axis text {
+    display:none;
+    font-size: 64px;
+    text-align: center;
+    line-height: normal;
 }
 
+#percent-of-fourDoors-in-IL{
+    font-size: 64px;
+    text-align: center;
+    line-height: normal;
+}
+#percent-of-fourDoors-in-IN{
+    font-size: 64px;
+    text-align: center;
+    line-height: normal;
+}
