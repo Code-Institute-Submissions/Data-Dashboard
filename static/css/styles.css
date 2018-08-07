@@ -1,7 +1,18 @@
-.number-box .x.axis text {
+.make-balance.x.axis text {
     display:none;
     font-size: 50px;
-    line-height: normal;
+}
+#part1{
+    
+}
+
+#part2.x.axis text {
+    display:none;
+    font-size: 50px;
+}
+
+#part2 {
+    
 }
 
 
