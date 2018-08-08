@@ -16,7 +16,7 @@
     <script type="text/javascript" src="static/js/graphs.js"></script>
 </head>
 <body>
-    <div id="fixednavbar">
+        <div id="fixednavbar">
         <nav class="navbar navbar-inverse">
            <div class="container-fluid">
                <div class="navbar-header">
@@ -27,13 +27,29 @@
             <li><a href="#part1">Make/Colour Data</a></li>
             <li><a href="#part2">Car Style Data</a></li>
             <li><a href="#part3">Towed Location Data</a></li>
-        
+            
+            <div id="resetbutton">
+            <ul>
+               <li> <a href="javascript:dc.filterAll(); dc.renderAll();"><button type="button" class="btn btn-info">Reset all filters</button></li>
+                  
+            </ul>
+              
+        </div>    
+            
+           
+      </a>
+            
         </ul>
+        
+            
+        
+             
     </div>
         </nav>   
     
            </div>     
-    </div>
+        </div>   
+   
     
     <main>
         
@@ -53,7 +69,7 @@
     
     </div>  
     <div id="p1">
-         <p id="p1" class="text-primary">Welcome to the Data Dashboard which provides knowledge on everything about cars getting towed in Chicago. This first chart respresents the number of cars towed for each car make, by hoving over the different bars you can see the direct total and the car make. Next to this graph is a discipline selector which you can use to change the data on the bar chart to see the colour of car which was towed for each make, you can easily use the selector to look at different colours just by selecting another option. Finally there is the pie chart which helps to show how many overall cars were towed for each colour. Dont forget you can use both the discipline seletor and pie chart to play around with all the other graphs and elements located on the page and if you don't like the data you are looking at just press the reset button at the top to go back to default.  </p>
+         <p class="text-primary">Welcome to the Data Dashboard which provides knowledge on everything about cars getting towed in Chicago. This first chart respresents the number of cars towed for each car make, by hoving over the different bars you can see the direct total and the car make. Next to this graph is a discipline selector which you can use to change the data on the bar chart to see the colour of car which was towed for each make, you can easily use the selector to look at different colours just by selecting another option. Finally there is the pie chart which helps to show how many overall cars were towed for each colour. Dont forget you can use both the discipline seletor and pie chart to play around with all the other graphs and elements located on the page and if you don't like the data you are looking at just press the reset button at the top to go back to default.  </p>
      </div>       
     </section>
     
