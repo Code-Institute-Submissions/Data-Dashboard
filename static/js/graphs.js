@@ -250,7 +250,13 @@ function show_towed_to(ndx){
         .yAxis().ticks(10);
 }
 
+var fixednavbar = document.getElementById('fixednavbar');
 
+    window.onscroll = function () {
+        
+        
+        fixednavbar.style.position = "fixed";
+    }
 
 
 
