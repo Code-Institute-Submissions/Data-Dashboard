@@ -246,7 +246,6 @@ function show_towed_to(ndx){
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
         .elasticY(true)
-        .xAxisLabel("Towed to Address")
         .yAxis().ticks(10);
 }
 
@@ -256,7 +255,8 @@ var fixednavbar = document.getElementById('fixednavbar');
         
         
         fixednavbar.style.position = "fixed";
-    }
+        fixednavbar.style.top = "0";
+    };
 
 
 
