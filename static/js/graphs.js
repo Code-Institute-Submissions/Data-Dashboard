@@ -6,15 +6,21 @@ function makeGraphs(error, towedData){
     var ndx = crossfilter(towedData);
     
     show_color_selector(ndx);
+    
     show_towed_make(ndx);
+    
     show_make_pie(ndx);
+    
     show_style_make(ndx);
+    
     //percentage of four doors car in IL and IN
     show_percent_that_are_four_doors(ndx, "IL", "#percent-of-fourDoors-in-IL");
     show_percent_that_are_four_doors(ndx, "IN", "#percent-of-fourDoors-in-IN");
+    
     //percentage of two doors car in IL and IN
     show_percent_that_are_two_doors(ndx, "IL", "#percent-of-twoDoors-in-IL");
     show_percent_that_are_two_doors(ndx, "IN", "#percent-of-twoDoors-in-IN");
+    
     //percentage of suv doors car in IL and IN
     show_percent_that_are_suv_doors(ndx, "IL", "#percent-of-suvDoors-in-IL");
     show_percent_that_are_suv_doors(ndx, "IN", "#percent-of-suvDoors-in-IN");
@@ -25,6 +31,7 @@ function makeGraphs(error, towedData){
     dc.renderAll();
 }
 
+//this creates a selector where the user can select what colour of car has been towed
 function show_color_selector(ndx){
     dim = ndx.dimension(dc.pluck('Color'));
     group = dim.group()
@@ -34,6 +41,7 @@ function show_color_selector(ndx){
     .group(group);
 }
 
+//this chart shows the number of car towed for each make
 function show_towed_make(ndx){
     var dim = ndx.dimension(dc.pluck('Make'));
     var group = dim.group();
@@ -51,6 +59,8 @@ function show_towed_make(ndx){
         .xAxisLabel("Car Make")
         .yAxis().ticks(10);
 }
+
+//this pie chart cuts up and shows the number of cars towed for each colour
 function show_make_pie(ndx){
     var name_dim = ndx.dimension(dc.pluck('Towed to Address'));
     var group = dim.group();
@@ -63,7 +73,7 @@ function show_make_pie(ndx){
         .group(group);
 }
 
-
+//this chart shows the number of car towed for three different styles
 function show_style_make(ndx) {
     
     function styleByMake(dimension, Style) {
@@ -87,7 +97,7 @@ function show_style_make(ndx) {
             }
         );
     }
-    
+    //groups the different styles so i don't have to repeat code
     var dim = ndx.dimension(dc.pluck("Make"));
     var fourdoorByMake = styleByMake(dim, "4D");
     var twodoorByMake = styleByMake(dim, "2D");
@@ -119,6 +129,8 @@ function show_style_make(ndx) {
         
         
 }
+
+//here is the code for three percentage gauges that show the percentage of the certain style of car style towed in two different main states
 function show_percent_that_are_four_doors(ndx, place, element) {
     var percentageThatAreFourDoors = ndx.groupAll().reduce(
         function(p, v) {
@@ -194,6 +206,7 @@ function show_percent_that_are_two_doors(ndx, place, element) {
         .group(percentageThatAreTwoDoors)
 }
 
+
 function show_percent_that_are_suv_doors(ndx, place, element) {
     var percentageThatAreSUVDoors = ndx.groupAll().reduce(
         function(p, v) {
@@ -231,7 +244,7 @@ function show_percent_that_are_suv_doors(ndx, place, element) {
         .group(percentageThatAreSUVDoors)
 }
 
-
+//this chart shows the number of cars towed to different towed addresses
 function show_towed_to(ndx){
     var dim = ndx.dimension(dc.pluck('Towed to Address'));
     var group = dim.group();

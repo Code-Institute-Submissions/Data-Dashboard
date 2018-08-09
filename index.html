@@ -14,116 +14,153 @@
     <script type="text/javascript" src="static/js/dc.min.js"></script>
     <script type="text/javascript" src="static/js/queue.min.js"></script>
     <script type="text/javascript" src="static/js/graphs.js"></script>
+    
+    <!--The Links for Styles and Javascript -->
+    
 </head>
 <body>
-        <div id="fixednavbar">
+    <!--My Fixed Nav Bar with Reset Button -->
+    <div id="fixednavbar">
         <nav class="navbar navbar-inverse navbar-fixed-top">
-           <div class="container-fluid">
-               <div class="navbar-header">
-                   <a class="navbar-brand" href="index.html">Chicago Towed Vehicles</a>
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Chicago Towed Vehicles</a>
                 </div>
+                
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
         <ul class="nav navbar-nav">
             <li><a href="#part1">Make/Colour Data</a></li>
             <li><a href="#part2">Car Style Data</a></li>
             <li><a href="#part3">Towed Location Data</a></li>
             
-            <div id="resetbutton">
-            <ul>
-               <li> <a href="javascript:dc.filterAll(); dc.renderAll();"><button type="button" class="btn btn-info">Reset all filters</button></li>
-                  
-            </ul>
-              
-        </div>    
-            
-           
-      </a>
-            
+    <div id="resetbutton">
+        <ul>
+            <li> <a href="javascript:dc.filterAll(); dc.renderAll();"><button type="button" class="btn btn-info">Reset all filters</button></li>
         </ul>
-        
-            
-        
-             
-    </div>
-        </nav>   
-    
-           </div>     
-        </div>   
-   
-    
-    <main>
-        
-    
-   
-    <section id="part1" class="section1">
-      <div class="container">
-         
-
-        <div>
-            <h1>The Make and Colour Of Cars Towed</h1> 
-            <div id="make-balance"></div>
-            <div id="color-selector"></div>
-            <div id="make-pie"></div> 
-            
-        </div>
-    
+              
     </div>  
+        </a>
+        </ul>
+    </div>
+        </nav>
+           </div>     
+        </div>  
+        
+        
+        <!--<div class="mobilenavbar">
+            <div id="fixednavbar">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Chicago Towed Vehicles</a>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+        <ul class="nav navbar-nav">
+            <li><a href="#part1">Make/Colour Data</a></li>
+            <li><a href="#part2">Car Style Data</a></li>
+            <li><a href="#part3">Towed Location Data</a></li>
+            
+    <div id="resetbutton">
+        <ul>
+            <li> <a href="javascript:dc.filterAll(); dc.renderAll();"><button type="button" class="btn btn-info">Reset all filters</button></li>
+        </ul>
+              
+    </div>  
+        </a>
+        </ul>
+    </div>
+                </div>
+                
+    
+        </nav>
+           </div>     
+        </div>      
+        </div>-->
+        
+        
+        
+    
+   
+    
+    
+    
+    
+<main>
+    <!--The first Section of graphs and etc -->
+    <section id="part1" class="section1">
+        
+        <div class="container">
+            
+            <div>
+                <h1>The Make and Colour Of Cars Towed</h1> 
+                <div id="make-balance"></div>
+                <div id="color-selector"></div>
+                <div id="make-pie"></div> 
+            
+            </div>
+    
+        </div>  
+    
     <div id="p1">
          <p class="text-primary">Welcome to the Data Dashboard which provides knowledge on everything about cars getting towed in Chicago. This first chart respresents the number of cars towed for each car make, by hoving over the different bars you can see the direct total and the car make. Next to this graph is a discipline selector which you can use to change the data on the bar chart to see the colour of car which was towed for each make, you can easily use the selector to look at different colours just by selecting another option. Finally there is the pie chart which helps to show how many overall cars were towed for each colour. Dont forget you can use both the discipline seletor and pie chart to play around with all the other graphs and elements located on the page and if you don't like the data you are looking at just press the reset button at the top to go back to default.  </p>
      </div>       
     </section>
     
+    <!--The second section of graphs and etc -->
     <section id="part2" class="section2">
-         <div class="container">
-        <div>
-            <h1>The Style Of Car</h1>
+        
+        <div class="container">
+            <div>
+                <h1>The Style Of Car</h1>
+            
             <div id="style-make"></div>
-            
             <div id="percentage">
-                
-                <div class=" col-md-3 fourdoors">
-                    <h3 class="perhead">% Of 4 Doors in IL or IN</h3>
-                    <div id="percent-of-fourDoors-in-IL"></div>
-                    <div id="percent-of-fourDoors-in-IN"></div>
-                </div>
+            <div class=" col-md-3 fourdoors">
+                <h3 class="perhead">% Of 4 Doors in IL or IN</h3>
+                <div id="percent-of-fourDoors-in-IL"></div>
+                <div id="percent-of-fourDoors-in-IN"></div>
+            </div>
             
-                <div class="col-md-3 twodoors">
-                    <h3 class="perhead">% Of 2 Doors in IL or IN</h3>
-                    <div id="percent-of-twoDoors-in-IL"></div>
-                    <div id="percent-of-twoDoors-in-IN"></div>    
-                </div>
+            <div class="col-md-3 twodoors">
+                <h3 class="perhead">% Of 2 Doors in IL or IN</h3>
+                <div id="percent-of-twoDoors-in-IL"></div>
+                <div id="percent-of-twoDoors-in-IN"></div>    
+            </div>
             
-                <div class="col-md-3 SUV">
-                    <h3 id="suvhead" class="perhead">% Of SUV in IL or IN</h3>
-                    <div id="percent-of-suvDoors-in-IL"></div>
-                    <div id="percent-of-suvDoors-in-IN"></div>    
-                </div>
+            <div class="col-md-3 SUV">
+                <h3 id="suvhead" class="perhead">% Of SUV in IL or IN</h3>
+                <div id="percent-of-suvDoors-in-IL"></div>
+                <div id="percent-of-suvDoors-in-IN"></div>    
+            </div>
                 
                 
                     
             </div>  
+            </div>
         </div>
-    </div>
+        
     <div id="p2">
          <p class="text-primary">Here we have a slightly more interesting bar chart because its a stacked bar, the data shown in this chart is the number of cars towed against different styles and these styles include four door, two door and SUV type of vechicles. like the chart before you just hover the different bars to see the data and the different styles are shown in different colours and with the use of the legend you can see what the style is. Next to this chart we have three lots of percentage counter with tell you the percentage of the different style cars towed in two different states, one being illinois and the other Indiana. Don't forgot to use the pie chart and so on to play with this data aswell. </p>
-         </div>     
+    </div>     
             
     </section>
        
+    <!--The thrid section of graphs -->
     <section id="part3" class="section3">
           <div class="container">
+        
         <div>
             <h1>The Towed To Location</h1>   
             <div id="towed-to"></div>
         </div>  
         
-    </div>  
-    <div id="p3"
+        </div>  
+    
+    <divid="p3"
          <p class="text-primary">The Final Chart, its a small one but is shows the towed to location for all cars towed but once again with the use of this chart, the pie chart or the discipline selector to really narrow down on the data. Hope you enjoy the data dashboard.</p>
      </div>             
     </section> 
     
-    </main>
+</main>
     
     
 </body>
