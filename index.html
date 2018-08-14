@@ -8,7 +8,18 @@
     <link rel="stylesheet" href="static/css/Bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="static/css/dc.min.css" type="text/css" />
     <link rel="stylesheet" href="static/css/styles.css" type="text/css" />
-
+    
+    
+     <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+    <script 
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+        crossorigin="anonymous">
+    </script>
     <script type="text/javascript" src="static/js/d3.min.js"></script>
     <script type="text/javascript" src="static/js/crossfilter.min.js"></script>
     <script type="text/javascript" src="static/js/dc.min.js"></script>
@@ -25,42 +36,38 @@
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.html">Chicago Towed Vehicles</a>
-                </div>
+                    </div>
                 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-        <ul class="nav navbar-nav">
-            <li><a href="#part1">Make/Colour Data</a></li>
-            <li><a href="#part2">Car Style Data</a></li>
-            <li><a href="#part3">Towed Location Data</a></li>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#part1">Make/Colour Data</a></li>
+                            <li><a href="#part2">Car Style Data</a></li>
+                            <li><a href="#part3">Towed Location Data</a></li>
             
-    <div id="resetbutton">
-        <ul>
-            <li> <a href="javascript:dc.filterAll(); dc.renderAll();"><button type="button" class="btn btn-info">Reset all filters</button></li>
-        </ul>
-              
+                                <div id="resetbutton">
+                                <ul>
+                                    <li> <a href="javascript:dc.filterAll(); dc.renderAll();"><button type="button" class="btn btn-info">Reset all filters</button></li>
+                                </ul>
+                            </div>  
+                        </a>
+                     </ul>
+                </div>
+            </div>         
+        </nav>    
     </div>  
-        </a>
-        </ul>
-    </div>
-        </nav>
-           </div>     
-        </div>  
         
         
         <div id="mobilenavbar">
-              <nav id="navbar-fixed-top">
+            <nav class="navbar-fixed-top">
        
-            
-                  
-        <ul id="listmobile">
-            <li><a href="index.html">Chicago Towed Vehicles</a></li>
-            <li><a href="#part1">Make/Colour Data</a></li>
-            <li><a href="#part2">Car Style Data</a></li>
-            <li><a href="#part3">Towed Location Data</a></li>
-            <li><a href="javascript:dc.filterAll(); dc.renderAll();"><button type="button" class="btn btn-info">Reset all filters</button></a></li>
-        </ul>
-        </nav>
-             
+                <ul id="listmobile">
+                    <li><a href="index.html">Chicago Towed Vehicles</a></li>
+                    <li><a href="#part1">Make/Colour Data</a></li>
+                    <li><a href="#part2">Car Style Data</a></li>
+                    <li><a href="#part3">Towed Location Data</a></li>
+                    <li><a href="javascript:dc.filterAll(); dc.renderAll();"><button type="button" class="btn btn-info">Reset all filters</button></a></li>
+                    </ul>
+            </nav>
         </div>
        
         

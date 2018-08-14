@@ -92,13 +92,9 @@
 
 
 @media (min-width:767px){
-    .mobilenavbar{
+    #mobilenavbar{
         display: none;
 
-    }
-    
-    #navbar-fixed-top {
-        display:none;
     }
     
     #mobilelistings{
@@ -112,7 +108,7 @@
    #listmobile{
        text-decoration: none;
        list-style-type:none;
-        width:767px;
+       width:767px;
        padding-top:10px;
        padding-bottom:20px;
        padding-left:100px;
@@ -124,18 +120,19 @@
        
    }
  
-    #mobilenavbar{
-    
+    .navbar-fixed-top{
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
+    
     
      .fixednavbar{
         display: none;
     }
-    .navbar-brand{
-        display: none;
-    }
-    .navbar{
-        display: none;
+   
+    .section1{
+        padding-top: 225px;
     }
     
     #mobilelistings{
