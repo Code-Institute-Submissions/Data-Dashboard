@@ -280,6 +280,6 @@ var mobilenavbar = document.getElementById('mobilenavbar');
     window.onscroll = function (){
         
         mobilenavbar.style.position = "fixed";
-        fixednavbar.style.top = "0";
+        mobilenavbar.style.top = "0";
     };
 
