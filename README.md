@@ -66,7 +66,7 @@ https://www.youtube.com/watch?v=pzKypBAMD60
 
 
 
-I also worked out that i needed to reset the graphs once the user had played around with them, i was unsure on how to do this and struggled to find any mention of this on the internet to i asked a tutor from code institute call nakita, she provided a snippet of code on how to do this and i adapted it to suit my dashboard. because my nav bar what going to be fixed i decided to add the reset button to the nav bar so the user could access it at all times.
+I also worked out that i needed to reset the graphs once the user had played around with them, so i added a button which would complete this task. because my nav bar what going to be fixed i decided to add the reset button to the nav bar so the user could access it at all times.
 
 
 
@@ -82,13 +82,15 @@ Testing:
 
 
 
-First i went through the simple testing procedures, which were checking the links worked and they did but at first the links didn't take the user to the precise part of the page i wanted. So after playing around with it i got what i wanted. Next was checking if the reset button worked with all graphs, so after trying numerous processes, it consistently worked. Next was checking the graphs, selector and legends worked and that they changed the data of the other graphs and indeed they did with ease and no delay. 
+First i went through the simple testing procedures, which were checking the links worked and they did but at first the links didn't take the user to the precise part of the page i wanted. So after playing around with it i got what i wanted. Next was checking if the reset button worked with all graphs, so after trying numerous processes, it consistently worked. Next was checking the graphs, selector and legends worked and that they changed the data of the other graphs and indeed they did with ease and no delay. one issue there is, is that in my selector there is a ":17" option and i wasn't sure what it is, its either a other option or its a error in the dataset. one issue there is, is that in my selector there is a ":17" option and i wasn't sure what it is, its either a other option or its a error in the dataset. 
 
 
 
 Also testing whether things such as text and so on was readable, then adjusting it to meet this requirement.
 
+Next was mobile testing, so i did the same tests as i did for the desktop version and everything was fine apart from my nav i did for the desktop version and everything was fine apart from my nav bar. So i crar. So i created a new nav bar from scratch just ated a new nav bar from scratch just for mobil mobile screens and followed the same process to make it a fixed nav bar, it didn't work at first but after some playing around with it, it finally started to work. there were also some other mobile changes such as i found tooltip hover doesn't work on mobile so i need another way so the user knew what car make they were looking at, so i created a in order list of the car makes which relates to the charts. so the user can see what data they are looking at.screens and followed the same process to make it a fixed nav bar, it didn't work at first but after some playing around with it, it finally started to work. there were also some other mobile changes such as i found tooltip hover doesn't work on mobile so i need another way so the user knew what car make they were looking at, so i created a in order list of the car makes which relates to the charts. so the user can see what data they are looking at.
 
+finally there is browser tesing i used http://browsershots.org/ to help me test my datadashboard against different browsers. The results werefinally there is browser tesing i used http://browsershots.org/ to help me test my datadashboard against different browsers. The results were that the data dashboard works fine on all main and up to date version of the different browsers.
 
 
 
