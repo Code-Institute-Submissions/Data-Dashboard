@@ -1,3 +1,31 @@
+@media (min-width:767px){
+    .mobilenavbar{
+        display: none;
+    }	
+	
+}
+
+@media (max-width: 767px) {
+    
+    .fixednavbar{
+        display: none;
+    }
+    
+    .mobilenavbar{
+        text-decoration: none;
+    }
+    
+}
+
+
+
+
+#resetbutton{
+    padding-top: 5px;
+    float: right;
+}
+
+
 
 .section1{
     padding-top: 100px;
@@ -84,14 +112,3 @@
 }
 
 
-@media (min-width:767px){
-	
-	
-}
-
-@media (max-width: 767px) {
-    .mobilenavbar{
-       font-family: fantasy;   
-    }
-    
-}
