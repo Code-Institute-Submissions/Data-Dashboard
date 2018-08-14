@@ -41,6 +41,11 @@ function show_color_selector(ndx){
     .group(group);
 }
 
+
+var x = document.getElementById("17");
+x.remove(x.selectedIndex);
+
+
 //this chart shows the number of car towed for each make
 function show_towed_make(ndx){
     var dim = ndx.dimension(dc.pluck('Make'));
@@ -90,7 +95,7 @@ function show_style_make(ndx) {
                 if(v.Style == Style) {
                     p.match--;
                 }
-                return p;
+                return p.toFixed(0);
             },
             function () {
                 return {total: 0, match: 0};
@@ -113,10 +118,12 @@ function show_style_make(ndx) {
         .stack(suvdoorByMake, "SUV")
         .valueAccessor(function(d) {
             if(d.value.total > 0) {
-                return (d.value.match / d.value.total) * 100;
+                var tooltip = Math.floor(d.value.match / d.value.total * 100);
+                return tooltip;
             } else {
                 return 0;
             }
+
         })
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
@@ -262,6 +269,7 @@ function show_towed_to(ndx){
         .yAxis().ticks(10);
 }
 
+//this snippet of code fixed my navbar to the top of the  users screen when scrolling.
 var fixednavbar = document.getElementById('fixednavbar');
 
     window.onscroll = function () {
@@ -271,5 +279,12 @@ var fixednavbar = document.getElementById('fixednavbar');
         fixednavbar.style.top = "0";
     };
 
+var mobilenavbar = document.getElementById('mobilenavbar');
 
+    window.onscroll = function () {
+        
+        
+        mobilenavbar.style.position = "fixed";
+        mobilenavbar.style.top = "0";
+    };
 
