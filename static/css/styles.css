@@ -94,16 +94,36 @@
 @media (min-width:767px){
     .mobilenavbar{
         display: none;
-    }	
+
+    }
+    
+    #navbar-fixed-top {
+        display:none;
+    }
+    
+    #mobilelistings{
+        display: none;
+    }
 	
 }
 
 @media (max-width: 767px) {
     
-   
+   #listmobile{
+       text-decoration: none;
+       list-style-type:none;
+       padding-top:10px;
+       padding-bottom:20px;
+       padding-left:130px;
+       line-height:40px;
+       background-color:#000080;
+       width:100%;
+       
+       
+   }
+ 
+    #mobilenavbar{
     
-    .mobilenavbar{
-        text-decoration: none;
     }
     
      .fixednavbar{
@@ -114,6 +134,12 @@
     }
     .navbar{
         display: none;
+    }
+    
+    #mobilelistings{
+     padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;    
     }
     
 }
