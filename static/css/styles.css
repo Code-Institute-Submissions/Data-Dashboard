@@ -112,7 +112,7 @@
 
 @media (max-width: 767px) {
     #resetbutton{
-        padding-right: 260px;
+        float:left;
     }
     
 }
