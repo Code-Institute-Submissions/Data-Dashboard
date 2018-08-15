@@ -91,54 +91,28 @@
 }
 
 
-@media (min-width:767px){
-    #mobilenavbar{
-        display: none;
-
-    }
-    
-    #mobilelistings{
-        display: none;
-    }
-	
+#resetbutton{
+    float: right;
+    list-style-type: none;
 }
 
-@media (max-width: 767px) {
+#buttonstyle{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+@media (min-width:767px){
+   
     
-   #listmobile{
-       text-decoration: none;
-       list-style-type:none;
-       width:767px;
-       padding-top:10px;
-       padding-bottom:20px;
-       padding-left:100px;
-       padding-right: 40px;
-       line-height:40px;
-       background-color:#000080;
-      
-       
-       
-   }
- 
-    .navbar-fixed-top{
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-    
-    
-     .fixednavbar{
+    #mobilelistings{
         display: none;
     }
    
-    .section1{
-        padding-top: 225px;
-    }
-    
-    #mobilelistings{
-     padding-left: 100px;
-    padding-right: 100px;
-    text-align: center;    
+}
+
+@media (max-width: 767px) {
+    #resetbutton{
+        padding-right: 260px;
     }
     
 }

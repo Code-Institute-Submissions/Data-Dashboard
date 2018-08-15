@@ -1,14 +1,28 @@
 Planning:
 
+
+
   
+
+
 
 To start my planning off, i thought it would be a good idea to take a look at other data dashboard to therefore see what is included in a data dashboard and to get the feel for it. For an example whether or not they used a nav bar, what type and how many charts were on the different pages if they had included multiple pages because some just used one continuous page. 
 
 
 
-Once I had taken a look at the different data dashboards I decided to plan out my data dashboard using an online mockup service, here I decided that i would include a nav bar but a fixed nav because i was going to have one continuous page for my data dashboard. By using a fixed nav bar i was going to include links to the different parts of the data dashboard therefore making it easy for the user to navigate the page. i wasn't sure how many parts i would have because i didn't know how many charts i could make from my chosen data set but this didn't matter because each page would follow the same format. This was the heading first, titling what this part was all about, next would be the charts,graphs and etc, then this would be followed by a description of some sort explaining what the data shows. From the advice video on Code institute, i decided to use a bootstrap theme from:
+
+
+
+
+Once I had taken a look at the different data dashboards I decided to plan out my data dashboard using an online mockup service, here I decided that i would include a nav bar but a fixed nav because i was going to have one continuous page for my data dashboard. By using a fixed nav bar i was going to include links to the different parts of the data dashboard therefore making it easy for the user to navigate the page. i wasn't sure how many parts i would have because i didn't know how many charts i could make from my chosen data set but this didn't matter because each page would follow the same format. This was the heading first, titling what this part was all about, next would be the charts,graphs and etc, then this would be followed by a description of some sort explaining what the data shows. From the advice video on Code Institute, I decided to use a bootstrap theme from:
+
+
 
 https://bootswatch.com/3/
+
+
+
+
 
 
 
@@ -16,13 +30,29 @@ In some of my researched data dashboard, i had seen that some of the different c
 
 
 
+
+
+
+
 Next on the agenda was to find a suitable data set, so i had to find one which had a file size less than or equal to because this was what cloud 9 only allowed to download and the file type needed to be CSV. I wasn't sure how i was going to do this so i asked around on slack and some mentioned a website called kaggle. So i used kaggle to find a suitable data set and i decided to use a data set on towed vehicles in Chicago as my final choice, here the link to the data set :
+
+
 
 https://www.kaggle.com/chicago/chicago-towed-vehicles
 
 
 
-Finally with the data set chosen, i decided to plan out was kind of charts and graphs i could create with the data at hand and note this down mentally. To be honest i went through lots of data set trying to plan out what kind of charts i could make and most were very limiting or if i did find a good one the file size was too big.
+
+
+
+
+Finally with the data set chosen, I decided to plan out was kind of charts and graphs I could create with the data at hand and note this down mentally. To be honest I went through lots of data set trying to plan out what kind of charts I could make and most were very limiting or if I did find a good one the file size was too big.
+
+
+
+
+
+
 
 
 
@@ -32,15 +62,31 @@ Technologies Used:
 
 
 
-This is where i prepared my workspace on cloud 9 for the project. So i first created a folder to hold my data set, next was a folder to hold sub folders css and JavaScript which then would hold their respective files, then i had a folder to hold text files such as my README and finally my index.html file.
 
 
 
-Next it was time to upload the important data, files and bootstrap. Firstly i uploaded my CSV data set file to my data folder. Secondly i uploaded my bootstrap to the CSS folder using wget and i did the same for dc.min.css file. Next i used wget to upload the crossfilter, d3, dc and queue files to my JavaScript folder, these important files would be used to bring my data dashboard to life. Finally i added a graph.js file to the JavaScript folder and this is where i would code my different graphs and etc.
+
+This is where I prepared my workspace on cloud 9 for the project. So I first created a folder to hold my data set, next was a folder to hold sub folders css and JavaScript which then would hold their respective files, then I had a folder to hold text files such as my README and finally my index.html file.
 
 
 
-After this i linked or scripted all these uploaded files to the index.html and now it was time to start creating graphs.
+
+
+
+
+Next it was time to upload the important data, files and bootstrap. Firstly I uploaded my CSV data set file to my data folder. Secondly i uploaded my bootstrap to the CSS folder using wget and I did the same for dc.min.css file. Next I used wget to upload the crossfilter, d3, dc and queue files to my JavaScript folder, these important files would be used to bring my data dashboard to life. Finally I added a graph.js file to the JavaScript folder and this is where I would code my different graphs and etc.
+
+
+
+
+
+
+
+After this I linked or scripted all these uploaded files to the index.html and now it was time to start creating graphs.
+
+
+
+
 
 
 
@@ -48,7 +94,15 @@ At this point i knew i would have a few section filled with different graphs and
 
 
 
+
+
+
+
 The next chart was a stacked bar chart, this was to show that i could further than just a normal bar chart. This chart showed the different styles towed for example 4 or 2 door cars. After this i coded a percentage gauge would display the percentage of 4 doors towed in two different states and i did this another two more time for the other two styles. 
+
+
+
+
 
 
 
@@ -56,13 +110,23 @@ The final bar chart was a chart which displayed the number of cars towed to diff
 
 
 
+
+
+
+
 Once this was done it was time to organize the different charts and etc into sections, then adding a title to the top of each chart and percentage gauges. Then adding a description to the bottom of each section to give some details on each section. 
 
 
 
-Now i needed to add navigation to my dashboard, so i used the bootstrap nav bar and adapted it to suit the dashboard. On the far left of the nav bar is the title of the dashboard which will take the user back to the top, next i included three titles on for each section and linked them to each data section. But now i needed to create a fixed nav bar, with some research and some javascript i managed to do this, this meant the user could use each section easily enough with the fixed nav bar. I used this video and the code at the end to achieve the nav bar:
 
-https://www.youtube.com/watch?v=pzKypBAMD60
+
+
+
+Now i needed to add navigation to my dashboard, so i used the bootstrap nav bar and adapted it to suit the dashboard. On the far left of the nav bar is the title of the dashboard which will take the user back to the top, next i included three titles on for each section and linked them to each data section. But now i needed to create a fixed nav bar, using the bootstrap i had imported i managed to achieve this, just needed to add my own personal touch.
+
+
+
+
 
 
 
@@ -70,7 +134,15 @@ I also worked out that i needed to reset the graphs once the user had played aro
 
 
 
+
+
+
+
 Finally i styled the dashboard adding padding and font-sizes to aid in the flow of the dashboard and the ease of use for the user. I also removed the x-axis labels on my graphs because they collided and the user would be unable to read them, but you may be like how can the user know what the data is but by hovering over the bars or data it pops up telling the user the data name and the number.
+
+
+
+
 
 
 
@@ -78,19 +150,43 @@ The purpose of a data dashboard is to provide readable, suitable and relevant da
 
 
 
+
+
+
+
 Testing:
 
 
 
-First i went through the simple testing procedures, which were checking the links worked and they did but at first the links didn't take the user to the precise part of the page i wanted. So after playing around with it i got what i wanted. Next was checking if the reset button worked with all graphs, so after trying numerous processes, it consistently worked. Next was checking the graphs, selector and legends worked and that they changed the data of the other graphs and indeed they did with ease and no delay. one issue there is, is that in my selector there is a ":17" option and i wasn't sure what it is, its either a other option or its a error in the dataset. one issue there is, is that in my selector there is a ":17" option and i wasn't sure what it is, its either a other option or its a error in the dataset. 
+
+
+
+
+First i went through the simple testing procedures, which were checking the links worked and they did but at first the links didn't take the user to the precise part of the page i wanted. So after playing around with it i got what i wanted. Next was checking if the reset button worked with all graphs, so after trying numerous processes, it consistently worked. Next was checking the graphs, selector and legends worked and that they changed the data of the other graphs and indeed they did with ease and no delay. one issue there is, is that in my selector there is a ":17" option and i wasn't sure what it is, it's either an other option or its an error in the dataset. 
+
+
 
 
 
 Also testing whether things such as text and so on was readable, then adjusting it to meet this requirement.
 
-Next was mobile testing, so i did the same tests as i did for the desktop version and everything was fine apart from my nav i did for the desktop version and everything was fine apart from my nav bar. So i crar. So i created a new nav bar from scratch just ated a new nav bar from scratch just for mobil mobile screens and followed the same process to make it a fixed nav bar, it didn't work at first but after some playing around with it, it finally started to work. there were also some other mobile changes such as i found tooltip hover doesn't work on mobile so i need another way so the user knew what car make they were looking at, so i created a in order list of the car makes which relates to the charts. so the user can see what data they are looking at.screens and followed the same process to make it a fixed nav bar, it didn't work at first but after some playing around with it, it finally started to work. there were also some other mobile changes such as i found tooltip hover doesn't work on mobile so i need another way so the user knew what car make they were looking at, so i created a in order list of the car makes which relates to the charts. so the user can see what data they are looking at.
 
-finally there is browser tesing i used http://browsershots.org/ to help me test my datadashboard against different browsers. The results werefinally there is browser tesing i used http://browsershots.org/ to help me test my datadashboard against different browsers. The results were that the data dashboard works fine on all main and up to date version of the different browsers.
+
+Next was mobile testing, so i did the same tests as i did for the desktop version and everything was fine apart from my navbar. So i created a new single nav bar instead of the two individual ones, this new nav bar fixed scrolling feature then work for both desktop and mobile and had a more professional vibe to it. There were also some other mobile changes such as i found tooltip hover doesn't work on mobile so i need another way so the user knew what car make they were looking at, so i created a in order list of the car makes which relates to the charts. so the user can see what data they are looking at.screens and followed the same process to make it a fixed nav bar, it didn't work at first but after some playing around with it, it finally started to work. there were also some other mobile changes such as i found tooltip hover doesn't work on mobile so i need another way so the user knew what car make they were looking at, so i created a in order list of the car makes which relates to the charts. so the user can see what data they are looking at.
+
+
+
+finally there is browser tesing i used http://browsershots.org/ to help me test my data dashboard against different browsers. The results werefinally there is browser tesing i used http://browsershots.org/ to help me test my data dashboard against different browsers. The results were that the data dashboard works fine on all main and up to date version of the different browsers.
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -264,21 +264,4 @@ function show_towed_to(ndx){
         .yAxis().ticks(10);
 }
 
- //this snippet of code fixed my navbar to the top of the  users screen when scrolling.
-// var fixednavbar = document.getElementById('fixednavbar');
-
-   //  window.onscroll = function () {
-        
-        
-     //    fixednavbar.style.position = "fixed";
-     //    fixednavbar.style.top = "0";
-   //  };
-
-
- //var mobilenavbar = document.getElementById('mobilenavbar');
-// window.onscroll = function (){
-        
-        //mobilenavbar.style.position = "fixed";
-        //mobilenavbar.style.top = "0";
-// };
 

@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="static/css/Bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="static/css/dc.min.css" type="text/css" />
     <link rel="stylesheet" href="static/css/styles.css" type="text/css" />
-    
-    
-     <script
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous">
@@ -30,56 +30,40 @@
     
 </head>
 <body>
-    <!--My Fixed Nav Bar with Reset Button -->
-    <div id="fixednavbar">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">Chicago Towed Vehicles</a>
-                    </div>
-                
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#part1">Make/Colour Data</a></li>
-                            <li><a href="#part2">Car Style Data</a></li>
-                            <li><a href="#part3">Towed Location Data</a></li>
-            
-                                <div id="resetbutton">
-                                <ul>
-                                    <li> <a href="javascript:dc.filterAll(); dc.renderAll();"><button type="button" class="btn btn-info">Reset all filters</button></li>
-                                </ul>
-                            </div>  
-                        </a>
-                     </ul>
-                </div>
-            </div>         
-        </nav>    
-    </div>  
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
         
-        
-        <div id="mobilenavbar">
-            <nav class="navbar-fixed-top">
-       
-                <ul id="listmobile">
-                    <li><a href="index.html">Chicago Towed Vehicles</a></li>
-                    <li><a href="#part1">Make/Colour Data</a></li>
-                    <li><a href="#part2">Car Style Data</a></li>
-                    <li><a href="#part3">Towed Location Data</a></li>
-                    <li><a href="javascript:dc.filterAll(); dc.renderAll();"><button type="button" class="btn btn-info">Reset all filters</button></a></li>
-                    </ul>
-            </nav>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Chicago Towed Vehicles</a>
         </div>
-       
+    
         
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#part1">Make/Color Data <span class="sr-only"></span></a></li>
+            <li><a href="#part2">Car Style Data</a></li>
+             <li><a href="#part3">Towed Location Data</a></li>
+            <ul id="resetbutton">
+                 <li><a href="javascript:dc.filterAll(); dc.renderAll();"><button type="button" class="btn btn-primary">Reset all filters</button></li>    
+            </ul>
+            
         
-        
+                   
+                </div> 
+            </a>  
+            </ul>
+           
+        </div>
+      </div>
+    </nav>
     
-   
-    
-    
-    
-    
-<main>
+ <main>
     <!--The first Section of graphs and etc -->
     <section id="part1" class="section1">
         
@@ -163,7 +147,8 @@
      </div>             
     </section> 
     
-</main>
+</main>   
+    
     
     
 </body>
