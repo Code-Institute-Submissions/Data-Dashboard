@@ -1,3 +1,32 @@
+Chicago Towed Vechicles Data Dashboard
+
+UX:
+
+The purpose of this project is to provide relevent information on the statistics of the number of cars towed in Chicago, but not just that, but the different colour, make, style and model of cars towed. The data dashboard will allow the user to interactive with all elements on the page to adjust and narrow dowm certain statistics for their research or just their ineterest. I think the fact that all data charts and so on, will interact with each other is very key because it makes the data more diverse, insetad of the usual fixed graph that can't be changed. So this means the user can get certain numbers for certain entries, or they can just get an overview by not using the interactivity of the charts, it all up to the user how they use it but i have gave them all the options.
+
+link for mockup:
+https://app.moqups.com/solomonj2k12@hotmail.co.uk/LYdLOgve03/view
+
+as you can see in the mockup, i was going for something simple and a simple pattern across each section and i wanted this because when using charts, there is no need to make the layout difficult to understand when this can have an impact on understanding what the data elements stand for, so by having a simple layout this meant the user knew what chart was what.
+
+
+Features;
+
+feature 1: fixed nav bar this meant the user can access all the different section at all times
+
+feature 2: reset button, this mean the user can reset the data anytime if the data was not showing what they wanted.
+
+feature 3 : ineractive data elements, so the user can broading their knowledge and reseach in this data set.
+
+feature 4 : mobile compatibility, so enough mobile compatibility that the user can use the dashboard on mobile however is still better on desktop for obvious reasons.
+
+feature to impleament in the furture:
+
+feature 1: a request forum, so the user can request certain charts to be added to the dashboard
+
+
+
+
 Planning:
 
 
@@ -172,11 +201,20 @@ Also testing whether things such as text and so on was readable, then adjusting 
 
 
 
-Next was mobile testing, so i did the same tests as i did for the desktop version and everything was fine apart from my navbar. So i created a new single nav bar instead of the two individual ones, this new nav bar fixed scrolling feature then work for both desktop and mobile and had a more professional vibe to it. There were also some other mobile changes such as i found tooltip hover doesn't work on mobile so i need another way so the user knew what car make they were looking at, so i created a in order list of the car makes which relates to the charts. so the user can see what data they are looking at.screens and followed the same process to make it a fixed nav bar, it didn't work at first but after some playing around with it, it finally started to work. there were also some other mobile changes such as i found tooltip hover doesn't work on mobile so i need another way so the user knew what car make they were looking at, so i created a in order list of the car makes which relates to the charts. so the user can see what data they are looking at.
+Next was mobile testing, so i did the same tests as i did for the desktop version and everything was fine apart from my navbar. So i created a new single nav bar instead of the two individual ones, this new nav bar fixed scrolling feature then work for both desktop and mobile and had a more professional vibe to it. There were also some other mobile changes such as i found tooltip hover doesn't work on mobile so i need another way so the user knew what car make they were looking at, so i created a in order list of the car makes which relates to the charts. so the user can see what data they are looking at.screens and followed the same process to make it a fixed nav bar, it didn't work at first but after some playing around with it, it finally started to work. there were also some other mobile changes such as i found tooltip hover doesn't work on mobile so i need another way so the user knew what car make they were looking at, so i created a in order list of the car makes which relates to the charts. so the user can see what data they are looking at. To solidate my checks i loaded the github pages to my phone and ipad, because i know sometimes the emulator doesn't always work, and from using my phone and ipad, i could see all was working fine.
 
 
 
 finally there is browser tesing i used http://browsershots.org/ to help me test my data dashboard against different browsers. The results werefinally there is browser tesing i used http://browsershots.org/ to help me test my data dashboard against different browsers. The results were that the data dashboard works fine on all main and up to date version of the different browsers.
+
+
+Deployment:
+
+Hosting the website is very simple with git hub because they have a feature called github pages, which will deploy the code you have commited to github, into a fully working website. All you have to do is make sure you have your lastest version of code committed, then go to settings, scroll down to github pages and underneath source there is a dropdown menu, click on master branch and the click save. This will deploy the code into website, give it some time to load otherwise you might get a 404 then click on the click provided to view your website.
+
+Heres a link to my webiste so anyone can view it.
+
+https://solomonj2k12.github.io/Data-Dashboard/
 
 
 
