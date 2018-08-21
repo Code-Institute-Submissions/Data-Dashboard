@@ -216,6 +216,21 @@ Heres a link to my webiste so anyone can view it.
 
 https://solomonj2k12.github.io/Data-Dashboard/
 
+however if someone wanted to create a copy of my code, they will need to install certain things to get the bootstrap and charts to work. So to do this the user will need to do a wget in the terminal for each link left below:
+
+bootstrap:
+https://bootswatch.com/3/cerulean/bootstrap.min.css
+
+JS:
+https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.js
+https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js
+https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js
+https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js
+
+CSS:
+https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.css
+
+so once installed the page will be fully functional 
 
 
 
